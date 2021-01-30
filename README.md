@@ -1,8 +1,6 @@
 # Azura 
-Here you will can find a version for build pkgbuilds and later some rpm for example.
-What is Azura, Azura is a new package manager.
-That is made to build package from repositories of community.
-There are for the moment a version for Nutyx and Nutyx's respins ( Yao and Ozone ).
+Here it's an workspace for the people who want to contribute but they aren't known by nutyx devel team.
+The work that people are doing here will be include in the official Azura repository, if your work is good maybe you will pushed in the official azura devel team.
 
 # Thanks ( need improvement )
 - To my friend Alpha who with his help contribute to Azura project.
