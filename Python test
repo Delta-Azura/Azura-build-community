@@ -9,6 +9,8 @@ def help () :
   print ("azura sync : syncronyse database from NCR") 
   print ("azura compile : compile the pkgfile")
   print ("azura remove : remove the package")
+
+# If error of syntax show help
   
 # function 
 def main 
