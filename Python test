@@ -2,6 +2,15 @@
 
 # From delta to sync NCR dataBase from azura 
 
+# This is a test to Azura tools syncronisation of a database in python, if this is a good tools maybe it will be add on official devel branche 
+
 def help () :
   print ("azura sync : syncronyse database from NCR") 
+  
+  
+  
+  
+  # End of file
+  
+  
   
