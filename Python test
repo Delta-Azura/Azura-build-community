@@ -11,7 +11,10 @@ def help () :
   print ("azura remove : remove the package")
   
 # function 
-if compile
+def main 
+  if args[1][:4] == "help":
+        help(args[1])
+        
   
   
   # End of file
