@@ -10,7 +10,8 @@ def help () :
   print ("azura compile : compile the pkgfile")
   print ("azura remove : remove the package")
   
-  
+# function 
+if compile
   
   
   # End of file
