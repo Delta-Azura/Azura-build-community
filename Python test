@@ -4,8 +4,11 @@
 
 # This is a test to Azura tools syncronisation of a database in python, if this is a good tools maybe it will be add on official devel branche 
 
+# Help for azura pm 
 def help () :
   print ("azura sync : syncronyse database from NCR") 
+  print ("azura compile : compile the pkgfile")
+  print ("azura remove : remove the package")
   
   
   
