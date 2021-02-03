@@ -15,6 +15,10 @@ def compile () :
   print ("Verification de la présence des principaux outils de cards nécessaire pour cette opération")
   print (" Tous les outils de cards.devel sont présents, début de l'opération")
 
+# function update_database 
+def update_database 
+  print ("Mise à jour de la base de donnée")
+
 # If error of syntax show help
   
 # function 
