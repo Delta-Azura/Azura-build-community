@@ -22,9 +22,10 @@ def update_database
 # If error of syntax show help
   
 # function 
-def main 
+def main () :
   if args == "help":
         help(args[1])
+ 
         
   
   
