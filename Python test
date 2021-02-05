@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# From delta to sync NCR dataBase from azura 
+# This program is devel by The NuTyX Community, it's a translation to Azura official code in Pyhton  
 
 # This is a test to Azura tools syncronisation of a database in python, if this is a good tools maybe it will be add on official devel branche 
 
