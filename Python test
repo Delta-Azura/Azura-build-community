@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-# This program is devel by The NuTyX Community, it's a translation to Azura official code in Pyhton  
+# This program is devel by The NuTyX Community, it's a translation to Azura official code in Pyhton.
+# Azura it's by and for the community, everybody can contribute or fork the code 
 
 # This is a test to Azura tools syncronisation of a database in python, if this is a good tools maybe it will be add on official devel branche 
 
