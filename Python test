@@ -4,7 +4,7 @@
 
 # This is a test to Azura tools syncronisation of a database in python, if this is a good tools maybe it will be add on official devel branche 
 
-# Help for azura pm 
+# Help for azura 
 def help () :
   print ("azura sync : syncronyse database from NCR") 
   print ("azura compile : compile the pkgfile")
@@ -15,13 +15,13 @@ def compile () :
   print ("Verification de la présence des principaux outils de cards nécessaire pour cette opération")
   print (" Tous les outils de cards.devel sont présents, début de l'opération")
 
-# function update_database 
+# Function update_database 
 def update_database 
   print ("Mise à jour de la base de donnée")
 
 # If error of syntax show help
   
-# function 
+# Function 
 def main () :
   if args == "help":
         help(args[1])
