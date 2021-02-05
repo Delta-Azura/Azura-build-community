@@ -23,7 +23,7 @@ def update_database
   
 # function 
 def main 
-  if args[1][:4] == "help":
+  if args == "help":
         help(args[1])
         
   
