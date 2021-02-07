@@ -1,9 +1,0 @@
-/*
-* Test
-*
-*
-*/
-type help 
-{
-  printf ("Coucou")
-}
