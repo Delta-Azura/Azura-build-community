@@ -2,4 +2,7 @@
 * Test
 
 */
-printf ("Coucou")
+type help 
+{
+  printf ("Coucou")
+}
