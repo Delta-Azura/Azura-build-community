@@ -41,10 +41,10 @@ function stop_if_error(){
 
 # Function main 
 function main () {
-if [ "$OPT_MODE" = "compile" ]; then
+        if [ "$OPT_MODE" = "compile" ]; then
                compile 
 	       
-elif [ "$OPT_MODE" = "help" ]; then
+        elif [ "$OPT_MODE" = "help" ]; then
 	        help
 main $@
 
