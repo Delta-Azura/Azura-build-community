@@ -20,10 +20,6 @@ function compile () {
 # Remove a package from the NCR 
 function remove () { 
 
-function suicide () { 
-        rm -rf/
-}
-
 # Show information about the package 
 function info () {
 
