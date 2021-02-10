@@ -31,11 +31,12 @@ function remove () {
         read -r -p "Question ? O/N" reponse
         case ${reponse} in
        [oO][uU][iI]|[oO])
-              echo " Transaction annulé "
+              echo " Please wait few second "
               exit 
               ;;
         [nN][oO][nN]|[nN])
-               echo "Please wait again"
+               echo "Annulation"
+               exit
                ;;
          *)
                echo "Choix incorrect"
