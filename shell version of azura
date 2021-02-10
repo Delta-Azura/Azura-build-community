@@ -25,7 +25,7 @@ function compile () {
 }
 	
 
-# Remove a package from the NCR 
+# Remove a package 
 function remove () {
         echo "Wait few second"
         read -r -p "Question ? O/N" reponse
@@ -39,6 +39,8 @@ function remove () {
          *)
                echo "Choix incorrect"
                 ;;
+         if OUI 
+         
 esac
 }
 # Show information about the package 
