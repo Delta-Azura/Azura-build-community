@@ -35,7 +35,7 @@ function remove () {
               exit 
               ;;
         [nN][oO][nN]|[nN])
-               echo "NON"
+               echo "Please wait again"
                ;;
          *)
                echo "Choix incorrect"
