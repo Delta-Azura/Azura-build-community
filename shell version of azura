@@ -31,7 +31,8 @@ function remove () {
         read -r -p "Question ? O/N" reponse
         case ${reponse} in
        [oO][uU][iI]|[oO])
-              echo "OUI"
+              echo " Transaction annulé "
+              exit 
               ;;
         [nN][oO][nN]|[nN])
                echo "NON"
