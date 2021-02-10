@@ -28,6 +28,18 @@ function compile () {
 # Remove a package from the NCR 
 function remove () {
         echo "Wait few second"
+        read -r -p "Question ? O/N" reponse
+        case ${reponse} in
+       [oO][uU][iI]|[oO])
+              echo "OUI"
+              ;;
+        [nN][oO][nN]|[nN])
+               echo "NON"
+               ;;
+         *)
+               echo "Choix incorrect"
+                ;;
+esac
 }
 # Show information about the package 
 function info () { 
