@@ -26,13 +26,6 @@ function info () {
 # Search a package in the NCR 
 function search () { 
 
-# Stop if error 
-function stop_if_error(){
-	if [[ $2 != 0 ]]; then
-		write_log "${1} : Code Erreur $3"
-		exit $3
-	                      
-}
 
 # If error on syntax show help 
 	if [[ $# = 0 ]];then
@@ -43,6 +36,8 @@ function stop_if_error(){
 function main () {
         if [ "$OPT_MODE" = "compile" ]; then
                compile 
+	if [[ $# = 0 ]];then
+		help
 	       
         elif [ "$OPT_MODE" = "help" ]; then
 	        help
