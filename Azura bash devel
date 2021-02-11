@@ -2,6 +2,8 @@
 # Azura : A cards complement build for manage package from the NCR( Nutyx Community Repository ).
 # It's devel by Delta an old member of NuTyX devel team
 # Warning this code may be unstable
+# The first release will be publish in Azura build community repo 
+
 
 # Function help 
 function help () {
@@ -86,5 +88,6 @@ function main () {
 	fi 
 }
 main @$
+
 # End of Azura code.
 # Thanks to all the contributors
