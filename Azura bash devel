@@ -79,12 +79,13 @@ function search () {
 
 # Function main 
 function main () {
+# Si l'user tape compile, lance la commande compile 
         if [ "$OPT_MODE" = "compile" ]; then
                compile 
-
+# Si rien n'est tapé afficher l'aide 
 	if [[ $# = 0 ]];then
 		help
-	       
+# Si l'user tape help, affiche l'aide 	       
         elif [ "$OPT_MODE" = "help" ]; then
 	        help
         
