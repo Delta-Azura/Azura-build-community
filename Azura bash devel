@@ -26,12 +26,14 @@ function compile () {
         echo " All cards devel programs are installed, start the installation process, please wait "
         read -r -p "Question ? O/N" reponse
         case ${reponse} in
+# Oui 
        [oO][uU][iI]|[oO])
               echo " Please wait few second "
               # Il y aura des trucs avant 
               echo "Done"
               exit 
               ;;
+# Nope 
         [nN][oO][nN]|[nN])
                echo "Annulation"
                exit
@@ -63,7 +65,7 @@ function remove () {
                exit 
                 ;;
          
-         
+# ferme le case       
 esac
 }
 # Show information about the package 
@@ -88,6 +90,7 @@ function main () {
         
 	fi 
 }
+# Le main @$ après la fermeture de la fonction sinon elle ne s'arrete pas 
 main @$
 
 # End of Azura code.
