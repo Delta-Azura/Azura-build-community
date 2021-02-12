@@ -54,15 +54,15 @@ esac
 
 # Remove a package 
 function remove () {
-        echo "Wait few second"
+        echo -e "Wait few second"
         read -r -p "Are you sure to want to continue ? O/N" reponse
         case ${reponse} in
        [oO][uU][iI]|[oO])
-              echo " Please wait few second "
+              echo -e " Please wait few second "
               exit 
               ;;
         [nN][oO][nN]|[nN])
-               echo "Annulation"
+               echo -e "Annulation"
                exit
                ;;
          *)
@@ -75,7 +75,7 @@ esac
 }
 # Show information about the package 
 function info () { 
-        echo " Please try to read the Azura database, execute this command ...... "
+        echo -e " Please try to read the Azura database, execute this command ...... "
 }
 # Search a package in the NCR 
 function search () { 
