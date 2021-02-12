@@ -49,9 +49,24 @@ function compile () {
                exit
                ;;
          *)
-               echo "Choix incorrect"
+               echo "Désolé, nous n'avons pas compris"
+	       read -r -p "Are you sure to want to continue ? O/N" reponse
+	       case ${reponse} in 
+	        [oO][uU][iI]|[oO])
+              echo " Please wait few second "
+              # Il y aura des trucs avant 
+              echo "Done"
+              exit 
+              ;;
+        [nN][oO][nN]|[nN])
+               echo "Annulation"    
                exit 
-                ;;	
+                ;;
+		    
+         *)
+               echo "Désolé, nous n'avons pas compris"
+	       exit
+		
 
 esac                
 }
