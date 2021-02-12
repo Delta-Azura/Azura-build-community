@@ -8,4 +8,7 @@ PLEASE NOT USE IT IT'S ONLY SOME TEST
 - To my friend Alpha who with his help contribute to Azura project.
 - Thanks to nutyx's team.
 - Special thanks to Rems28 
+- Thanks to LomigandTux
+-Merci à Sundev 
+-Merci à Samuel
 
