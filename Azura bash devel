@@ -87,7 +87,7 @@ function remove () {
                exit
                ;;
          *)
-               echo "Choix incorrect"
+               echo "Sorry we didn't understand your answer, please launch the command again"
                exit 
                 ;;
          
