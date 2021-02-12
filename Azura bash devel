@@ -11,6 +11,7 @@ function help () {
         echo -e " azura compile : compile a software from its pkgfile "
         echo -e " azura remove : remove the package "
         echo -e " azura info : show the information about the package "
+	echo -e "azura sync : a page with some informations about packages available"
 }
 
 # Function download database 
