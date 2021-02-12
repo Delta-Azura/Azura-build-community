@@ -97,13 +97,12 @@ function main () {
 	        help
 	fi
 	
+# Data sync
+	
 	if [ "$OPT_MODE" = "sync" ]; then
 		database-sync
 	fi
-		
-	
-	
-	fi 
+			
 }
 # Le main @$ après la fermeture de la fonction sinon elle ne s'arrete pas 
 main @$
