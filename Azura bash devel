@@ -60,7 +60,7 @@ function compile () {
 	       read -r -p "Are you sure to want to continue ? O/N" reponse
 	       case ${reponse} in 
 	        [oO][uU][iI]|[oO])
-              echo " Please wait few second "
+              echo -e " Please wait few second "
               # Il y aura des trucs avant 
               echo "Done"
               exit 
