@@ -18,7 +18,7 @@ function help () {
 function database-sync () {
 # Aller dans le répertoire Azura 
 	cd ~/Azura
-# Si ik n'existe pas, créer le répertoire Azura 
+# Si il n'existe pas, créer le répertoire Azura 
         if [[ $? = 1 ]]
 		mkdir ~/Azura
 # Telecharger la base de donnée 
@@ -27,7 +27,7 @@ function database-sync () {
 
 # Add a package from the NCR 
 function compile () { 
-        echo " Verification of the cards devel utils "
+        echo -e " Verification of the cards devel utils "
 # Ce n'est pas la bonne commande, il faudra vérifier dans le wiki de nutyx 
 	cards search cards.devel
 	if [[$? = 1]]
