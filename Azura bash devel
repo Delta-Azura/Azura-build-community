@@ -8,7 +8,7 @@
 # Contents :
 #1ère partie : function Help
 #2ème partie : function sync 
-#3ème partie : function compile (création en cours de travaux, contient des erreurs au niveau de la vérification de la présence des outils cards.devel) 
+#3ème partie : function compile (création en cours de travaux, normalement plus d'erreurs au niveau de la recherche de cards.devel) 
 
 
 # Function help 
@@ -35,7 +35,7 @@ function database-sync () {
 function compile () { 
         echo -e " Verification of the cards devel utils "
 # Ce n'est pas la bonne commande, il faudra vérifier dans le wiki de nutyx 
-	cards search cards.devel
+	cards list | grep cards.devel
 	if [[$? = 1]]
 		cards install cards.devel 
 	fi 
