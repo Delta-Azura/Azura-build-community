@@ -15,7 +15,7 @@ function help () {
 }
 
 # Function download database 
-function database sync () {
+function database-sync () {
 # Aller dans le répertoire Azura 
 	cd ~/Azura
 # Si ik n'existe pas, créer le répertoire Azura 
@@ -91,9 +91,13 @@ function main () {
 	if [[ $# = 0 ]];then
 		help
 # Si l'user tape help, affiche l'aide 	       
-        elif [ "$OPT_MODE" = "help" ]; then
+        if [ "$OPT_MODE" = "help" ]; then
 	        help
-        
+	if [ "$OPT_MODE" = "sync" ]; then
+		database-sync
+		
+	
+	
 	fi 
 }
 # Le main @$ après la fermeture de la fonction sinon elle ne s'arrete pas 
