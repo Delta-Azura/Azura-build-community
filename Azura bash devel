@@ -5,7 +5,7 @@
 # The first release will be publish in Azura build community repo 
 # This is an testing repo 
 
-# Sommaire :*
+# Contents :
 #1ère partie : function Help
 #2ème partie : function sync 
 #3ème partie : function compile (création en cours de travaux, contient des erreurs au niveau de la vérification de la présence des outils cards.devel) 
