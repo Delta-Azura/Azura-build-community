@@ -30,7 +30,7 @@ function compile () {
         echo " Verification of the cards devel utils "
 	cards search cards.devel
 	if [[$? = 1]]
-		cards install cards.devel git 
+		cards install cards.devel 
 	fi 
 	
         echo " All cards devel programs are installed, start the installation process, please wait "
