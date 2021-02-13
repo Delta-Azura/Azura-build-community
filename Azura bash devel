@@ -35,8 +35,7 @@ function database-sync () {
 function compile () { 
         echo -e " Verification of the cards devel utils "
 # Ce n'est pas la bonne commande, il faudra vérifier dans le wiki de nutyx 
-	
-        echo " Verification of the presence of cards.devel tools "
+	echo " Verification of the presence of cards.devel tools "
         sudo pkgmk -d
         sudo pkgadd nano1*
         if [[$? = 1]] 
