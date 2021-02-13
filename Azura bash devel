@@ -43,7 +43,7 @@ function compile () {
 		cards install cards.devel
         fi 
                 
-        read -r -p "Are you sure to want to continue? O/N" reponse
+        read -r -p "Are you sure to want to continue ? O/N" reponse
         case ${reponse} in
 # Oui 
        [oO][uU][iI]|[oO])
