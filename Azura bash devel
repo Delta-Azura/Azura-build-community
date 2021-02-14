@@ -40,6 +40,8 @@ function compile () {
         sudo pkgadd nano1*
         if [[$? = 1]] 
 		cards install cards.devel
+                pkgmk -d
+                pkgadd 
         fi 
                 
         read -r -p "Are you sure to want to continue ? O/N" reponse
