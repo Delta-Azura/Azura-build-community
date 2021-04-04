@@ -1,13 +1,8 @@
 #! /bin/bash
 # Azura : A cards complement build for manage package from the NCR( Nutyx Community Repository ).
 # It's devel by Delta an old member of NuTyX devel team
-# Contents :
-#3ème partie : function compile 
+ 
 
-
-
-
-# Add a package from the NCR
 function compile () {
         echo -e "Avant de poursuivre, vérifiez si votre pkgfile appelé PKGBUILD dans est seul dans un répertoire, et si le chemin vers le répertoire commence bien par : usr/ports/perso/"
         read -r -p "Si tout est bon, on vous laisse poursuivre ? O/N" reponse
