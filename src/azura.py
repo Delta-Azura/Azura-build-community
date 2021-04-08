@@ -61,7 +61,11 @@ def update():
 # Comming soon
 def remove ():
     rem =input("Quel paquet voulez vous supprimer : ")
-    os.system("sudo cards remove " + rem ) 
+    flatpak_remove =input("Ce paquet est il un flatapk ? : ")
+    if yes == yes :
+        os.system("flatpak remove " + rem )
+    if yes != yes : 
+        os.system("sudo cards remove " + rem)
     os.system("sudo cards purge")
 
 
