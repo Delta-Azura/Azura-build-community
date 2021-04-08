@@ -2,6 +2,14 @@
 
 import os
 import sys  
+yes = "yes"
+
+def help():
+    print("Hi")
+    print("Pour mettre àjour votre os : sudo azura update ")
+    print("Pour installer un paquet : sudo azura install ")
+    print("Pour désistaller des paquets : sudo azura remove ")
+    print("Pour compile un pkgfile : sudo azura compile ")
 
 # Fonction principale, build le pkgfile
 def compile():
@@ -34,15 +42,23 @@ def install():
 def update():
     print("Nous mettons votre système à jour")
     os.system("sudo cards sync")
-    print("Nous nettoyons les archives binaires")
     os.system("sudo cards upgrade")
+    ask =input("Des mises à jour de flatpak sont peut-être dispo, voulez-vous les effectuer ? [yes ou no] : ")
+    if ask == yes :
+        os.system("flatpak update")
+    if ask != yes:
+        exit()
+
+    print("Nous nettoyons les archives binaires")
+    os.system("sudo cards purge")
     print("Done")
 
 # Comming soon
 def remove ():
     rem =input("Quel paquet voulez vous supprimer : ")
-    os.system("sudo cards remove " + rem )
+    os.system("sudo cards remove " + rem ) 
     os.system("sudo cards purge")
+
 
 #  Les arguments
 if sys.argv[1] == "update":
@@ -57,9 +73,5 @@ if sys.argv[1] == "install":
 if sys.argv[1] == "remove":
     remove()
 
-
-# Les arguments
-if sys.argv[1] == "compile":
-    compile()
-if sys.argv[1] == "install":
-    install()
+if sys.argv[1] == "help":
+    help() 
