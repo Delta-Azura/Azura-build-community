@@ -33,7 +33,12 @@ def install():
     print("Nous syncronisons les dépôts de votre os ... please wait ") 
     os.system("sudo cards sync")
     package =input("Donnez nous du package à installer : ")
-    os.system("sudo cards install " + package)
+    flatpak =input("Ces paquets sont-ils des flatpaks ? : ")
+    if flatpak == yes :
+        os.system("flatpak update")
+        os.system("flatpak install " + package )
+    if flatpak != yes :
+        os.system("sudo cards install " + package )
     print("Nous procédons à un nettoyage des archives binaires")
     os.system("sudo cards purge")
     print("Done")
