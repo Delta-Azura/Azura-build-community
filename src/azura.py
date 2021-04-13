@@ -5,7 +5,6 @@ import os
 import sys  
 import parser 
 yes = "yes"
-from lxml import etree
 
 # Fonction d'aide : 
 def help():
@@ -55,10 +54,7 @@ def remove ():
 
 
 def compile():
-    principal_vrai=input("Indiquer nous l'URL vers le code source du paquet à compiler ? : ")
-    os.system("wget -c " +principal_vrai )
-    instructions-de-build=input("Donnez nous les instructions de build : ")
-
+    # Comming soon, contact azura team if you want more information
     exit()
 
 
