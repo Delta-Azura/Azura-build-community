@@ -50,7 +50,12 @@ def update():
 
 # Comming soon
 def remove ():
-    os.chdir("/var/azura/lib/pkg/DB")
+    try :
+        os.chdir("/var/azura/lib/pkg/DB")
+    execpt :
+        os.system("sudo mkdir /var/azura/lib/pkg/DB")
+        os.chdir("/var/azura/lib/pkg/DB")
+    
 
 
 def compile():
