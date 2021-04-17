@@ -12,7 +12,7 @@ def main():
     yes_or_no = input("Alors ? [yes ou no ] : ")
     if yes == yes_or_no :
         print("Nous installons la BASE d'une installation graphique ... ")
-        os.system("sudo cards install lxdm xorg-xf86-video-intel zip unzip xdg-user-dirs sound-theme-freedesktop gvfs xorg-xf86-input-synaptics network-manager-applet")
+        os.system("sudo cards install lxdm xorg-xf86-video-intel zip unzip xdg-user-dirs sound-theme-freedesktop alsa-utils pavucontrol gvfs xorg-xf86-input-synaptics network-manager-applet")
         firefox_install = input("Souhaitez vous installer un navigateur web ? [yes or no ] : ")
         if firefox_install == yes:
             os.system("sudo cards install firefox")
