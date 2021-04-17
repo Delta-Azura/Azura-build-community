@@ -16,6 +16,9 @@ def main():
         firefox_install = input("Souhaitez vous installer un navigateur web ? [yes or no ] : ")
         if firefox_install == yes:
             os.system("sudo cards install firefox")
+        thunderbird_install = input("Souhaitez vous un client de messagerie ? : )
+        if thunderbird_install == yes :
+            os.system("sudo cards install thunderbird")
         print("Nous syncronisons les dépôts de votre os")
         os.system("sudo cards sync && sudo cards upgrade")
         install =input("Quels paquets souhaitez vous installer ? : ")
