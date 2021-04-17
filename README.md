@@ -8,11 +8,12 @@ Vous pouvez le faire sur telegram via mon groupe : https://t.me/joinchat/Sd0m11k
 
 # A propos de ce dépôt
 
-Il est dédié aux commits en masse de l'équipe de dev. Le code posté ici n'est pas forcément stable même si généralement, l'équipe l'a testé. Si vous voulez du code stable et éprouvé, veuillez consulter le dépôt azura-package-manager
+Il est dédié aux commits en masse de l'équipe de dev. Le code posté ici n'est pas forcément stable même si généralement, l'équipe l'a testé. Si vous voulez du code stable et éprouvé, veuillez consulter le dépôt azura-package-manager qui sera plus ancien mais utilisable :) .
 
-# Remerciements (section à améliorer : contributeurs manquants ).
+# Remerciements
 
-Lomig & Tux pour l'apport de ses connaissances au projet ainsi qu'aux méthodes de travail
-nut pour ses précieux conseils. 
-Rems ou Rems28 pour sa patience qui a permis de donner naissance à Azura. Hugo qui avec Rems ont contribué grâce à leurs projets ont permis de faire avancer le developpement d'Azura.
+- Lomig & Tux pour l'apport de ses connaissances au projet ainsi qu'aux méthodes de travail
+- Tnut pour ses précieux conseils. 
+- Rems ou Rems28 pour sa patience qui a permis de donner naissance à Azura. Hugo qui avec Rems ont contribué grâce à leurs projets ont permis de faire avancer le developpement d'Azura.
+- Freloop1642 qui a rejoint l'équipe ;) et qui contribue activement au projet.
 
