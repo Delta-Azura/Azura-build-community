@@ -2,13 +2,13 @@
 
  function compile () {
         echo -e "Avant de poursuivre, vérifiez si votre pkgfile appelé PKGBUILD dans est seul dans un répertoire, et si le chemin vers le répertoire commence bien par : usr/ports/perso/"
-        read -r -p "Si tout est bon, on vous laisse poursuivre ? O/N" reponse
+        read -r -p "Si tout est bon, on vous laisse poursuivre ? O/N : " reponse
         case ${reponse} in
            [oO][uU][iI]|[oO])
               echo "OK"
-              read -p "Comment s'appelle votre paquet" name
+              read -p "Comment s'appelle votre paquet : " name
               echo $name
-              read -p "Donnez-nous le chemin vers le répertoire de votre pkgfile" fichier
+              read -p "Donnez-nous le chemin vers le répertoire de votre pkgfile : " fichier
               echo $fichier 
               cd $fichier
               pkgmk -d 
