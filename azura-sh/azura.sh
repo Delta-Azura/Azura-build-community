@@ -27,8 +27,18 @@
 
 }
 
-
-
+function install () {
+        if [[ $2 ]];then
+              sudo cards upgrade
+              sudo cards install $2
+              read -p "Souaitez vous installer des flatpaks, si oui veuillez spécifié lesquels ? : " ask_1
+              if [[ $ask_1 = non ]];then
+                    echo "ok"
+              else 
+                    flatpak update && flatpak install $ask_1
+                    sudo cards purge 
+              fi 
+              
 # Function main
 function main () {
 # Si l'user tape compile, lance la commande compile
