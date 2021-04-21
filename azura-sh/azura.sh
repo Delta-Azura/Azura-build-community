@@ -6,21 +6,18 @@
         case ${reponse} in
            [oO][uU][iI]|[oO])
               echo "OK"
-              read -p "Comment s'appelle votre paquet : " name
-              echo $name
-              read -p "Donnez-nous le chemin vers le répertoire de votre pkgfile : " fichier
-              echo $fichier 
-              cd $fichier
+              echo $1
+              cd /usr/ports/perso/$name
               pkgmk -d 
               pkgadd $name
               if [[ $? = 1 ]];then
-                        cards install cards.devel
-                    
+                      cards install cards.devel
+                      pkgmk -d
+                      pkgadd ${1}1*
               fi
-              pkgmk -d 
-              pkgadd $name1*
-              if [[ $? = 0 ]];then
-                      echo "Done"
+              if [[ $? = 1 ]];then
+                      echo "votre pkgfile ne porte pas le nom de pkgfile ou bien il ne se trouve pas dans le bon répertoire "
+                      exit
               fi
               ;;
               esac
@@ -37,15 +34,14 @@ function install () {
               else 
                     flatpak update && flatpak install $ask_1
                     sudo cards purge 
-              fi 
+              fi
+}
               
 # Function main
 function main () {
 # Si l'user tape compile, lance la commande compile
-        if [[ "$1" = "compile" ]];then
+        if [[ $1 ]];then
                 compile
-                        
-        fi
 }
 # Le main @$ après la fermeture de la fonction sinon elle ne s'arrete pas
 main "$@"
